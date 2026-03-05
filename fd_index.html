@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshdesk Report</title>
+  <link rel="stylesheet" href="fd_style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-inner">
+      <h1>📊 Freshdesk Report</h1>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button onclick="showTab('agente')" class="active">👤<br>PER AGENTE</button>
+    <button onclick="showTab('cliente')">🏢<br>PER CLIENTE</button>
+    <button onclick="showTab('categoria')">🏷️<br>PER CATEGORIA</button>
+    <button onclick="showTab('impostazioni')">⚙️<br>IMPOSTAZIONI</button>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      <div id="mainContent"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Freshdesk Report &mdash; Dilaxia
+  </div>
+
+  <script src="fd_script.js"></script>
+</body>
+</html>
